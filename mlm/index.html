@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invest Now</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Royal Enfield Investment Plans</h1>
+
+    <!-- Plan Section -->
+    <div class="plan">
+      <img src="images/plan1.jpg" alt="Classic Daily Bonus Plan" class="plan-image">
+      <div class="plan-details">
+        <h2>Classic Daily Bonus Plan</h2>
+        <p><strong>Investment Amount:</strong> ₹1099</p>
+        <p><strong>Daily Bonus:</strong> 5%</p>
+      </div>
+      <div class="plan-actions">
+        <button class="btn invest-now" data-plan="Classic Daily Bonus Plan">Invest Now</button>
+      </div>
+    </div>
+
+    <!-- UPI and Confirmation Section -->
+    <div class="upi-section">
+      <p>Use the UPI ID below to complete your payment:</p>
+      <p class="hidden-upi">7319005615@mbk</p>
+      <button class="btn" id="show-form-btn">I’ve Paid</button>
+    </div>
+
+    <!-- Confirmation Form -->
+    <form class="confirm-form" id="payment-confirm-form">
+      <input type="text" name="transactionId" placeholder="Enter Transaction ID" required />
+      <button type="submit">Confirm Payment</button>
+    </form>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
